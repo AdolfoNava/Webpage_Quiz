@@ -1,0 +1,81 @@
+html {
+  font-size: 20px;
+}
+/* Last rule overwrites what is above */
+body {
+  /* You can apply multiple style declarations inside of a block. */
+  background: url("../images/oriental-tiles.png");
+  color: white;
+  max-width: 800px;
+  /* This margin automatically centers block elements and fit into moblie
+    devices. */
+  margin: 0 auto;
+  /* font-family: "Century Gothic", sans-serif; */
+  font-family: "PT Sans", sans-serif;
+}
+
+a {
+  color: White;
+}
+
+.emoji-list {
+  list-style: none;
+}
+.emoji-list li::before {
+  content: "👉";
+  padding-right: 0.5rem;
+}
+/* ::before is a pseudo-element. */
+a {
+  transition: color 0.125s, background-color 0.125s;
+}
+/* unvisited link - which is the default state. :link is a pseudo-class.*/
+a:link {
+  background-color: transparent;
+  color: rgb(193, 196, 61);
+}
+/* Visited link */
+a:visited {
+  background-color: transparent;
+  color: rgb(193, 196, 61);
+}
+/* Focused link */
+a:focus {
+  background-color: rgb(193, 196, 61);
+  color: white;
+}
+/* Hovered link. */
+a:hover {
+  background-color: rgb(193, 196, 61);
+  color: white;
+}
+
+/* 
+  Some elements that default to block p, ul, li, nav
+  Some elements that default to inline: a, span, img. 
+  */
+
+p,
+ul,
+li {
+  /* display, inline */
+}
+a,
+span,
+img {
+  /* display: block; */
+}
+
+/* Box Model Demo */
+
+* {
+  /* border: 2px solid; */
+}
+
+h1 {
+  /* background-color: White;
+    color: black;
+    border: 10px solid black;
+    padding: 20px;
+    margin: 100px; */
+}

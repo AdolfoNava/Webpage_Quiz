@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quiz Game - About</title>
+    <!-- Calling Main.css for the text and background change -->
+    <Link rel="stylesheet" href="./CSS/Main.css"></Link>
+    <!-- <script type="module" src="./JS/basics.js"></script> -->
+    <script type="module" src="JS/about.js" ></script>
+  </head>
+  <!--Comment Section ignored by the browser-->
+  <body>
+    <!-- Header - Introduction content logo, search, navigation -->
+    <header>
+      <!-- Span is for inline text -->
+      <span id="logo">Logo</span>
+      <!-- Nav is for navigation lines -->
+      <nav id="main-nav">
+        <!-- Inside of a nav, we will nest anchor elements. -->
+        <a href="./index.html">Quiz </a> | <a href="./about.html">About Me</a>
+      </nav>
+    </header>
+
+    <!-- Main is for the main content of our HTML page. -->
+    <main>
+      <h1>About Me</h1>
+      <h2>Adolfo Nava</h2>
+      <hr />
+      <p>We're learning HTML together! 👍</p>
+      <p>Some artists that I've been listening to lately:</p>
+      <ul class="emoji-list">
+        <!-- Nesting Example
+        (Parent) <ul> 
+            (Child) <li>item #1</li>
+            (Child) <li>item #2</li>
+            (Child) <li>item #3</li>
+            (Child) <li>item #4</li>
+        (Parent) </ul>
+        -->
+        <li>Bullet for my Vallentine</li>
+        <li>Billy Talent</li>
+        <li>Korn</li>
+        <li>Sum 41</li>
+      </ul>
+      <p>The languages I am writing</p>
+      <ul class="emoji-list">
+        <li>C#</li>
+        <li>C++</li>
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JavaScript</li>
+      <p>
+        A TV show that I have been recently watching was
+        <a
+          href="https://www.netflix.com/title/80057918"
+          title="A Crime Drama Fantasy only on Netflix"
+          target="_blank"
+        >
+          Lucifer</a
+        >
+      </p>
+      <div id="JS-output">
+
+      </div>
+      <button id="click-button">Click Button</button>
+      <button id="speak-button">Speak Button</button>
+      <!-- Image Source = https://www.pexels.com/photo/big-tree-photo-922610/ -->
+      <img
+        src="./Images/Serene-Beachside.jpg"
+        alt="Isolation for enlightenment "
+        width="500"
+      />      
+
+    </main>
+    <!--  Footer is for supplemental info like copyright, contact, additional navigation, etc.-->
+    <footer>© Adolfo Nava, 2020</footer>
+  </body>
+</html>
